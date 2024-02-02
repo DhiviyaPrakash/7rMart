@@ -1,0 +1,22 @@
+<suite name="GroceryApplication" parallel ="tests" thread-count = "2"> <!-- parallely 2 testcases will run 1 in chrom & 1 in firefox-->
+	<test name="ChromeTest">
+		<parameter name = "Browser" value ="Chrome"></parameter>
+		<classes>
+			<class name="testCase.LoginPageTest"></class>
+			<class name="testCase.HomePageTest"></class>
+			<class name="testCase.ManageLocationTest"></class>
+			
+			
+		</classes>
+	</test>
+	<test name="FireFoxTest">
+		<parameter name = "Browser" value ="FireFox"></parameter>
+		<classes>
+			<class name="testCase.LoginPageTest"></class>
+			<class name="testCase.HomePageTest"></class>
+			<class name="testCase.ManageLocationTest"></class>
+			
+			
+		</classes>
+	</test>
+</suite>

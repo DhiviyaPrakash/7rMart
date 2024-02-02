@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Failed suite [GroceryApplication]">
+  <listeners>
+    <listener class-name="utilities.RetryListener"/>
+    <listener class-name="utilities.ExtenetReport"/>
+  </listeners>
+  <test thread-count="1" parallel="tests" name="ChromeTest(failed)">
+    <parameter name="Group" value="Chrome"/>
+    <groups>
+      <run>
+        <exclude name="Regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testCase.ManageExpenseTest">
+        <methods>
+          <include name="tc05_DeleteExpenseSavedDatainTable"/>
+          <include name="afterMethode"/>
+          <include name="beforeMethod"/>
+          <include name="tc04_EditExpenseSavedData03"/>
+          <include name="tc03_SearchDataInExpenseTable"/>
+        </methods>
+      </class> <!-- testCase.ManageExpenseTest -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [GroceryApplication] -->

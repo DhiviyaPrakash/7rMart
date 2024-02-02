@@ -1,0 +1,25 @@
+<suite name="GroceryApplication" parallel="tests" thread-count="1">
+
+	<test name="ChromeTest">
+
+		<listeners>	
+			 <listener class-name="utilities.RetryListener" />
+			<listener class-name="utilities.ExtenetReport" />
+			
+		</listeners>
+		
+		<parameter name="Group" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<Include name="smokeTest"></Include>
+				<exclude name ="Regression"></exclude>
+			</run>
+		</groups>
+		<classes>
+			<class name="testCase.ManageExpenseTest"></class>
+
+
+		</classes>
+	</test>
+
+</suite>
