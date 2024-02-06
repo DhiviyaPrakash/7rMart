@@ -17,7 +17,7 @@ public class ManageExpense {
 	GeneralUtilites gu = new GeneralUtilites();
 	WaitUtilities wu = new WaitUtilities();
 	FileUploadUtilities fu = new FileUploadUtilities();
-	String text;
+	String text  ;
 	public ManageExpense(WebDriver driver)
 	{
 		this.driver = driver;
@@ -35,8 +35,16 @@ public class ManageExpense {
 	WebElement saveButton;
 	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
 	WebElement alertText;
+	@FindBy(xpath = "//a[@class ='btn btn-rounded btn-primary']")
+	WebElement titleSearchButton;
+	@FindBy(xpath = "//input[@id='un']")
+	WebElement searchTitlefield;
+	@FindBy(xpath = "//button[@value='sr']")
+	WebElement searchTitlePageSearchButton;
 	@FindBy(xpath = "//ul//a[@class='nav-link']//p [text() = 'Manage Expense']")
 	WebElement manageExpensePage;
+	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
+	WebElement titleDeleteSucessAlertMessage;
 	@FindBy(xpath = "//a[@class='btn btn-rounded btn-danger']")
 	WebElement manageExpenseNewButton;
 	@FindBy(xpath = "//select[@id='user_id']")
@@ -100,7 +108,7 @@ public class ManageExpense {
 	}
 	public void sendTitleField()
 	{
-		String text = "ABCD"+gu.generateCurrentDateAndTime();
+		String text="ABCD"+gu.generateCurrentDateAndTime();
 		this.text = text;
 		gu.sendKeyFunction(titleField,text );
 	}
@@ -122,7 +130,32 @@ public class ManageExpense {
 	        WebElement element=driver.findElement(By.xpath(tableElementPath));
 	        return element.getText();
 	 }
-	public void clickManageExpensePage()
+	public void clickExpenseCategoryDeleteButton(int row)
+	{
+		String tableElementPath="//table[@class='table table-bordered table-hover table-sm']//tbody//tr["+row+"]//td[2]//a[2]";
+        WebElement element=driver.findElement(By.xpath(tableElementPath));
+        element.click();
+	}
+	public void clickExpenseCategorySearchButton()
+	{
+		titleSearchButton.click();
+	}
+	public void sendTitleFieldSearch(String text)
+	{
+		this.text = text;
+		gu.sendKeyFunction(searchTitlefield,text );
+	}
+	public void clicksearchTitlePageSearchButton()
+	{
+		searchTitlePageSearchButton.click();
+	}
+	public String getTitleDeleteScucessMessage()
+	{
+		System.out.println(titleDeleteSucessAlertMessage.getText());
+		return titleDeleteSucessAlertMessage.getText();
+	}
+	
+	public void clickManageExpensePage() 
 	{
 		manageExpensePage.click();
 	}
@@ -170,7 +203,7 @@ public class ManageExpense {
 	}
 	public void choosefileUpload() throws Exception
 	{
-		fu.fileUpload(chooseFile, driver, "C:\\Users\\DhiviyaPrakash\\OneDrive\\Pictures\\download.jpg");
+		fu.fileUpload(chooseFile, driver, "C:\\Users\\DhiviyaPrakash\\git\\7rMart\\7rMart\\src\\main\\resources\\fileupload\\download.jpg");
 		
 	}
 	public void pageScroll()
@@ -211,6 +244,11 @@ public class ManageExpense {
 	public void updateUserDropdown()
 	{
 		gu.selectByValueFromDropdown(userDropdown, "12");
+	}
+	public void updateButtonwait() 
+	{
+		//wu.fluentWait(driver, updateButton, "Class", "btn btn-danger");
+		wu.fluentWaitforClick(driver, updateButton);
 	}
 	public void clickUpdateButton()
 	{
@@ -254,10 +292,12 @@ public class ManageExpense {
 	}
 	public void sendDatetoDateFromField()
 	{
+		searchDateFromField.clear();
 		gu.sendKeyFunction(searchDateFromField, "28-01-2024");
 	}
 	public void sendDateToDateToField()
 	{
+		searchDateToField.clear();
 		gu.sendKeyFunction(searchDateToField, "15-03-2024");
 	}
 	public void clickSearchButtonInSearchListPage()
@@ -268,15 +308,16 @@ public class ManageExpense {
 	{
 			String tableElementPath="//table[@class='table table-bordered table-hover table-sm']//tbody//tr["+row+"]//td[8]//div[@class='action-buttons']";
 	        WebElement element=driver.findElement(By.xpath(tableElementPath));
+	        wu.fluentWaitforClick(driver, element);
 	        element.click();
 	        
 	        }
 	
 	public void clickFileInViewMore()
 	{
-		String tableElementPath="//table[@class='table table-bordered table-hover table-sm']//tbody//tr[2]//td//div[5][@class='col-xs-12 col-sm-12']//span//a";
+		String tableElementPath="//table[@class='table table-bordered table-hover table-sm']//tbody//tr[2]//td//div[4][@class='col-xs-12 col-sm-12']//div//span//a";
         WebElement element=driver.findElement(By.xpath(tableElementPath));
-        //wu.fluentWait(driver, element, tableElementPath, tableElementPath);
+        wu.fluentWaitforClick(driver, element);
         element.click();
         	
 	}

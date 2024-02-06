@@ -15,7 +15,7 @@ public class ExcelReadUtilities {
 
 	public static String readStringData(int i, int j) throws IOException {
 		f = new FileInputStream(
-				"C:\\Users\\DhiviyaPrakash\\git\\Selenium-project-repository\\7rMart\\src\\main\\resources\\Excel\\7rMart project.xlsx");
+				"C:\\Users\\DhiviyaPrakash\\git\\7rMart\\7rMart\\src\\main\\resources\\Excel\\7rMart project.xlsx");
 		w = new XSSFWorkbook(f);
 		s = w.getSheet("Login page credentials");
 		Row r = s.getRow(i);
@@ -25,7 +25,7 @@ public class ExcelReadUtilities {
 
 	public static String readIntegerData(int i, int j) throws IOException {
 		f = new FileInputStream(
-				"C:\\Users\\DhiviyaPrakash\\git\\Selenium-project-repository\\7rMart\\src\\main\\resources\\Excel\\7rMart project.xlsx");
+				"C:\\Users\\DhiviyaPrakash\\git\\7rMart\\7rMart\\src\\main\\resources\\Excel\\7rMart project.xlsx");
 		w = new XSSFWorkbook(f);
 		s = w.getSheet("Login page credentials");
 		Row r = s.getRow(i);

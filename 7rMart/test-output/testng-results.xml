@@ -1,19 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="7" ignored="0" total="12" passed="3" failed="2" skipped="0">
+<testng-results ignored="0" total="30" passed="30" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-02T21:36:22 IST" name="GroceryApplication" finished-at="2024-02-02T21:39:30 IST" duration-ms="188193">
+  <suite started-at="2024-02-05T21:32:20 IST" name="GroceryApplication" finished-at="2024-02-05T21:35:00 IST" duration-ms="160676">
     <groups>
+      <group name="new">
+        <method signature="ManageExpenseTest.tc02_SearchAndDeleteExpenseCategoryTitle()[pri:0, instance:testCase.ManageExpenseTest@1d296da]" name="tc02_SearchAndDeleteExpenseCategoryTitle" class="testCase.ManageExpenseTest"/>
+        <method signature="ManageExpenseTest.tc02_SearchAndDeleteExpenseCategoryTitle()[pri:0, instance:testCase.ManageExpenseTest@4b2bac3f]" name="tc02_SearchAndDeleteExpenseCategoryTitle" class="testCase.ManageExpenseTest"/>
+      </group> <!-- new -->
+      <group name="selenium">
+        <method signature="ManageExpenseTest.tc01_VerifyExpenseCategoryNewTitleCreation()[pri:0, instance:testCase.ManageExpenseTest@1d296da]" name="tc01_VerifyExpenseCategoryNewTitleCreation" class="testCase.ManageExpenseTest"/>
+        <method signature="ManageExpenseTest.tc03_AddNewExpenseVerification02()[pri:0, instance:testCase.ManageExpenseTest@1d296da]" name="tc03_AddNewExpenseVerification02" class="testCase.ManageExpenseTest"/>
+        <method signature="ManageExpenseTest.tc01_VerifyExpenseCategoryNewTitleCreation()[pri:0, instance:testCase.ManageExpenseTest@4b2bac3f]" name="tc01_VerifyExpenseCategoryNewTitleCreation" class="testCase.ManageExpenseTest"/>
+        <method signature="ManageExpenseTest.tc03_AddNewExpenseVerification02()[pri:0, instance:testCase.ManageExpenseTest@4b2bac3f]" name="tc03_AddNewExpenseVerification02" class="testCase.ManageExpenseTest"/>
+      </group> <!-- selenium -->
+      <group name="regression">
+        <method signature="HomePageTest.homePage()[pri:0, instance:testCase.HomePageTest@5b7a5baa]" name="homePage" class="testCase.HomePageTest"/>
+        <method signature="HomePageTest.homePage()[pri:0, instance:testCase.HomePageTest@79079097]" name="homePage" class="testCase.HomePageTest"/>
+      </group> <!-- regression -->
       <group name="smokeTest">
-        <method signature="ManageExpenseTest.tc02_AddNewExpenseVerification02()[pri:0, instance:testCase.ManageExpenseTest@4562e04d]" name="tc02_AddNewExpenseVerification02" class="testCase.ManageExpenseTest"/>
-        <method signature="ManageExpenseTest.tc03_SearchDataInExpenseTable()[pri:0, instance:testCase.ManageExpenseTest@4562e04d]" name="tc03_SearchDataInExpenseTable" class="testCase.ManageExpenseTest"/>
-        <method signature="ManageExpenseTest.tc04_EditExpenseSavedData03()[pri:0, instance:testCase.ManageExpenseTest@4562e04d]" name="tc04_EditExpenseSavedData03" class="testCase.ManageExpenseTest"/>
-        <method signature="ManageExpenseTest.tc05_DeleteExpenseSavedDatainTable()[pri:0, instance:testCase.ManageExpenseTest@4562e04d]" name="tc05_DeleteExpenseSavedDatainTable" class="testCase.ManageExpenseTest"/>
+        <method signature="HomePageTest.homePage()[pri:0, instance:testCase.HomePageTest@5b7a5baa]" name="homePage" class="testCase.HomePageTest"/>
+        <method signature="LoginPageTest.verifyLoginWithValidCredentials()[pri:0, instance:testCase.LoginPageTest@235834f2]" name="verifyLoginWithValidCredentials" class="testCase.LoginPageTest"/>
+        <method signature="ManageExpenseTest.tc04_SearchDataInExpenseTable()[pri:0, instance:testCase.ManageExpenseTest@1d296da]" name="tc04_SearchDataInExpenseTable" class="testCase.ManageExpenseTest"/>
+        <method signature="ManageExpenseTest.tc05_EditExpenseSavedData03()[pri:0, instance:testCase.ManageExpenseTest@1d296da]" name="tc05_EditExpenseSavedData03" class="testCase.ManageExpenseTest"/>
+        <method signature="ManageExpenseTest.tc06_DeleteExpenseSavedDatainTable()[pri:0, instance:testCase.ManageExpenseTest@1d296da]" name="tc06_DeleteExpenseSavedDatainTable" class="testCase.ManageExpenseTest"/>
+        <method signature="HomePageTest.homePage()[pri:0, instance:testCase.HomePageTest@79079097]" name="homePage" class="testCase.HomePageTest"/>
+        <method signature="LoginPageTest.verifyLoginWithValidCredentials()[pri:0, instance:testCase.LoginPageTest@3bf7ca37]" name="verifyLoginWithValidCredentials" class="testCase.LoginPageTest"/>
+        <method signature="ManageExpenseTest.tc04_SearchDataInExpenseTable()[pri:0, instance:testCase.ManageExpenseTest@4b2bac3f]" name="tc04_SearchDataInExpenseTable" class="testCase.ManageExpenseTest"/>
+        <method signature="ManageExpenseTest.tc05_EditExpenseSavedData03()[pri:0, instance:testCase.ManageExpenseTest@4b2bac3f]" name="tc05_EditExpenseSavedData03" class="testCase.ManageExpenseTest"/>
+        <method signature="ManageExpenseTest.tc06_DeleteExpenseSavedDatainTable()[pri:0, instance:testCase.ManageExpenseTest@4b2bac3f]" name="tc06_DeleteExpenseSavedDatainTable" class="testCase.ManageExpenseTest"/>
       </group> <!-- smokeTest -->
     </groups>
-    <test started-at="2024-02-02T21:36:22 IST" name="ChromeTest" finished-at="2024-02-02T21:39:30 IST" duration-ms="188193">
+    <test started-at="2024-02-05T21:32:20 IST" name="ChromeTest" finished-at="2024-02-05T21:34:30 IST" duration-ms="130238">
+      <class name="testCase.HomePageTest">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.HomePageTest@5b7a5baa]" started-at="2024-02-05T21:32:43 IST" name="beforeMethod" finished-at="2024-02-05T21:32:48 IST" duration-ms="4645" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="homePage()[pri:0, instance:testCase.HomePageTest@5b7a5baa]" started-at="2024-02-05T21:32:48 IST" name="homePage" finished-at="2024-02-05T21:32:52 IST" duration-ms="4136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePage -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.HomePageTest@5b7a5baa]" started-at="2024-02-05T21:32:52 IST" name="afterMethode" finished-at="2024-02-05T21:32:52 IST" duration-ms="319" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=homePage status=SUCCESS method=HomePageTest.homePage()[pri:0, instance:testCase.HomePageTest@5b7a5baa] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+      </class> <!-- testCase.HomePageTest -->
       <class name="testCase.ManageExpenseTest">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ManageExpenseTest@4562e04d]" started-at="2024-02-02T21:36:22 IST" name="beforeMethod" finished-at="2024-02-02T21:36:26 IST" duration-ms="3979" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ManageExpenseTest@1d296da]" started-at="2024-02-05T21:33:26 IST" name="beforeMethod" finished-at="2024-02-05T21:33:29 IST" duration-ms="3447" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -24,22 +72,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="tc01_VerifyExpenseCategoryNewTitleCreation01()[pri:0, instance:testCase.ManageExpenseTest@4562e04d]" started-at="2024-02-02T21:36:26 IST" name="tc01_VerifyExpenseCategoryNewTitleCreation01" finished-at="2024-02-02T21:36:29 IST" duration-ms="3105" status="PASS">
+        <test-method signature="tc01_VerifyExpenseCategoryNewTitleCreation()[pri:0, instance:testCase.ManageExpenseTest@1d296da]" started-at="2024-02-05T21:33:29 IST" name="tc01_VerifyExpenseCategoryNewTitleCreation" finished-at="2024-02-05T21:33:31 IST" duration-ms="2164" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tc01_VerifyExpenseCategoryNewTitleCreation01 -->
-        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ManageExpenseTest@4562e04d]" started-at="2024-02-02T21:36:30 IST" name="afterMethode" finished-at="2024-02-02T21:36:30 IST" duration-ms="317" status="PASS">
+        </test-method> <!-- tc01_VerifyExpenseCategoryNewTitleCreation -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ManageExpenseTest@1d296da]" started-at="2024-02-05T21:33:31 IST" name="afterMethode" finished-at="2024-02-05T21:33:32 IST" duration-ms="254" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=tc01_VerifyExpenseCategoryNewTitleCreation01 status=SUCCESS method=ManageExpenseTest.tc01_VerifyExpenseCategoryNewTitleCreation01()[pri:0, instance:testCase.ManageExpenseTest@4562e04d] output={null}]]]>
+                <![CDATA[[TestResult name=tc01_VerifyExpenseCategoryNewTitleCreation status=SUCCESS method=ManageExpenseTest.tc01_VerifyExpenseCategoryNewTitleCreation()[pri:0, instance:testCase.ManageExpenseTest@1d296da] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethode -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ManageExpenseTest@4562e04d]" started-at="2024-02-02T21:36:30 IST" name="beforeMethod" finished-at="2024-02-02T21:36:33 IST" duration-ms="2576" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ManageExpenseTest@1d296da]" started-at="2024-02-05T21:33:32 IST" name="beforeMethod" finished-at="2024-02-05T21:33:36 IST" duration-ms="3813" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -50,22 +98,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="tc02_AddNewExpenseVerification02()[pri:0, instance:testCase.ManageExpenseTest@4562e04d]" started-at="2024-02-02T21:36:33 IST" name="tc02_AddNewExpenseVerification02" finished-at="2024-02-02T21:36:41 IST" duration-ms="8664" status="PASS">
+        <test-method signature="tc02_SearchAndDeleteExpenseCategoryTitle()[pri:0, instance:testCase.ManageExpenseTest@1d296da]" started-at="2024-02-05T21:33:36 IST" name="tc02_SearchAndDeleteExpenseCategoryTitle" finished-at="2024-02-05T21:33:39 IST" duration-ms="3092" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tc02_AddNewExpenseVerification02 -->
-        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ManageExpenseTest@4562e04d]" started-at="2024-02-02T21:36:41 IST" name="afterMethode" finished-at="2024-02-02T21:36:42 IST" duration-ms="352" status="PASS">
+        </test-method> <!-- tc02_SearchAndDeleteExpenseCategoryTitle -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ManageExpenseTest@1d296da]" started-at="2024-02-05T21:33:39 IST" name="afterMethode" finished-at="2024-02-05T21:33:39 IST" duration-ms="260" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=tc02_AddNewExpenseVerification02 status=SUCCESS method=ManageExpenseTest.tc02_AddNewExpenseVerification02()[pri:0, instance:testCase.ManageExpenseTest@4562e04d] output={null}]]]>
+                <![CDATA[[TestResult name=tc02_SearchAndDeleteExpenseCategoryTitle status=SUCCESS method=ManageExpenseTest.tc02_SearchAndDeleteExpenseCategoryTitle()[pri:0, instance:testCase.ManageExpenseTest@1d296da] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethode -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ManageExpenseTest@4562e04d]" started-at="2024-02-02T21:36:42 IST" name="beforeMethod" finished-at="2024-02-02T21:36:44 IST" duration-ms="2568" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ManageExpenseTest@1d296da]" started-at="2024-02-05T21:33:39 IST" name="beforeMethod" finished-at="2024-02-05T21:33:42 IST" duration-ms="2657" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -76,87 +124,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method retried="true" signature="tc03_SearchDataInExpenseTable()[pri:0, instance:testCase.ManageExpenseTest@4562e04d]" started-at="2024-02-02T21:36:44 IST" name="tc03_SearchDataInExpenseTable" finished-at="2024-02-02T21:37:14 IST" duration-ms="29790" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//table[@class='table table-bordered table-hover table-sm']//tbody//tr[2]//td//div[5][@class='col-xs-12 col-sm-12']//span//a"}
-  (Session info: chrome=121.0.6167.87)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fc9bf6238c5d14cfa151e36d4ac35486, findElement {using=xpath, value=//table[@class='table table-bordered table-hover table-sm']//tbody//tr[2]//td//div[5][@class='col-xs-12 col-sm-12']//span//a}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.87, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\DHIVIY~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52240}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52240/devtoo..., se:cdpVersion: 121.0.6167.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fc9bf6238c5d14cfa151e36d4ac35486]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//table[@class='table table-bordered table-hover table-sm']//tbody//tr[2]//td//div[5][@class='col-xs-12 col-sm-12']//span//a"}
-  (Session info: chrome=121.0.6167.87)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fc9bf6238c5d14cfa151e36d4ac35486, findElement {using=xpath, value=//table[@class='table table-bordered table-hover table-sm']//tbody//tr[2]//td//div[5][@class='col-xs-12 col-sm-12']//span//a}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.87, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\DHIVIY~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52240}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52240/devtoo..., se:cdpVersion: 121.0.6167.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fc9bf6238c5d14cfa151e36d4ac35486
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
-at elementRepository.ManageExpense.clickFileInViewMore(ManageExpense.java:278)
-at testCase.ManageExpenseTest.tc03_SearchDataInExpenseTable(ManageExpenseTest.java:100)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="tc03_AddNewExpenseVerification02()[pri:0, instance:testCase.ManageExpenseTest@1d296da]" started-at="2024-02-05T21:33:42 IST" name="tc03_AddNewExpenseVerification02" finished-at="2024-02-05T21:33:56 IST" duration-ms="14676" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tc03_SearchDataInExpenseTable -->
-        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ManageExpenseTest@4562e04d]" started-at="2024-02-02T21:37:14 IST" name="afterMethode" finished-at="2024-02-02T21:37:14 IST" duration-ms="390" status="PASS">
+        </test-method> <!-- tc03_AddNewExpenseVerification02 -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ManageExpenseTest@1d296da]" started-at="2024-02-05T21:33:56 IST" name="afterMethode" finished-at="2024-02-05T21:33:57 IST" duration-ms="574" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=tc03_SearchDataInExpenseTable status=SKIP method=ManageExpenseTest.tc03_SearchDataInExpenseTable()[pri:0, instance:testCase.ManageExpenseTest@4562e04d] output={null}]]]>
+                <![CDATA[[TestResult name=tc03_AddNewExpenseVerification02 status=SUCCESS method=ManageExpenseTest.tc03_AddNewExpenseVerification02()[pri:0, instance:testCase.ManageExpenseTest@1d296da] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethode -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ManageExpenseTest@4562e04d]" started-at="2024-02-02T21:37:14 IST" name="beforeMethod" finished-at="2024-02-02T21:37:17 IST" duration-ms="2515" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ManageExpenseTest@1d296da]" started-at="2024-02-05T21:33:57 IST" name="beforeMethod" finished-at="2024-02-05T21:34:00 IST" duration-ms="3078" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -167,87 +150,22 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method retried="true" signature="tc03_SearchDataInExpenseTable()[pri:0, instance:testCase.ManageExpenseTest@4562e04d]" started-at="2024-02-02T21:37:17 IST" name="tc03_SearchDataInExpenseTable" finished-at="2024-02-02T21:37:47 IST" duration-ms="30045" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//table[@class='table table-bordered table-hover table-sm']//tbody//tr[2]//td//div[5][@class='col-xs-12 col-sm-12']//span//a"}
-  (Session info: chrome=121.0.6167.87)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [82b9b70183e086766e835953043001ad, findElement {using=xpath, value=//table[@class='table table-bordered table-hover table-sm']//tbody//tr[2]//td//div[5][@class='col-xs-12 col-sm-12']//span//a}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.87, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\DHIVIY~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52296}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52296/devtoo..., se:cdpVersion: 121.0.6167.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 82b9b70183e086766e835953043001ad]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//table[@class='table table-bordered table-hover table-sm']//tbody//tr[2]//td//div[5][@class='col-xs-12 col-sm-12']//span//a"}
-  (Session info: chrome=121.0.6167.87)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [82b9b70183e086766e835953043001ad, findElement {using=xpath, value=//table[@class='table table-bordered table-hover table-sm']//tbody//tr[2]//td//div[5][@class='col-xs-12 col-sm-12']//span//a}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.87, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\DHIVIY~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52296}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52296/devtoo..., se:cdpVersion: 121.0.6167.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 82b9b70183e086766e835953043001ad
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
-at elementRepository.ManageExpense.clickFileInViewMore(ManageExpense.java:278)
-at testCase.ManageExpenseTest.tc03_SearchDataInExpenseTable(ManageExpenseTest.java:100)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="tc04_SearchDataInExpenseTable()[pri:0, instance:testCase.ManageExpenseTest@1d296da]" started-at="2024-02-05T21:34:00 IST" name="tc04_SearchDataInExpenseTable" finished-at="2024-02-05T21:34:14 IST" duration-ms="14493" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tc03_SearchDataInExpenseTable -->
-        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ManageExpenseTest@4562e04d]" started-at="2024-02-02T21:37:47 IST" name="afterMethode" finished-at="2024-02-02T21:37:47 IST" duration-ms="338" status="PASS">
+        </test-method> <!-- tc04_SearchDataInExpenseTable -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ManageExpenseTest@1d296da]" started-at="2024-02-05T21:34:14 IST" name="afterMethode" finished-at="2024-02-05T21:34:15 IST" duration-ms="392" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=tc03_SearchDataInExpenseTable status=SKIP method=ManageExpenseTest.tc03_SearchDataInExpenseTable()[pri:0, instance:testCase.ManageExpenseTest@4562e04d] output={null}]]]>
+                <![CDATA[[TestResult name=tc04_SearchDataInExpenseTable status=SUCCESS method=ManageExpenseTest.tc04_SearchDataInExpenseTable()[pri:0, instance:testCase.ManageExpenseTest@1d296da] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethode -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ManageExpenseTest@4562e04d]" started-at="2024-02-02T21:37:47 IST" name="beforeMethod" finished-at="2024-02-02T21:37:50 IST" duration-ms="2560" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ManageExpenseTest@1d296da]" started-at="2024-02-05T21:34:15 IST" name="beforeMethod" finished-at="2024-02-05T21:34:18 IST" duration-ms="3648" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -258,87 +176,22 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method retried="true" signature="tc03_SearchDataInExpenseTable()[pri:0, instance:testCase.ManageExpenseTest@4562e04d]" started-at="2024-02-02T21:37:50 IST" name="tc03_SearchDataInExpenseTable" finished-at="2024-02-02T21:38:19 IST" duration-ms="29040" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//table[@class='table table-bordered table-hover table-sm']//tbody//tr[2]//td//div[5][@class='col-xs-12 col-sm-12']//span//a"}
-  (Session info: chrome=121.0.6167.87)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [072c632bff61da735ca5ec32f575e8d5, findElement {using=xpath, value=//table[@class='table table-bordered table-hover table-sm']//tbody//tr[2]//td//div[5][@class='col-xs-12 col-sm-12']//span//a}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.87, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\DHIVIY~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52345}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52345/devtoo..., se:cdpVersion: 121.0.6167.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 072c632bff61da735ca5ec32f575e8d5]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//table[@class='table table-bordered table-hover table-sm']//tbody//tr[2]//td//div[5][@class='col-xs-12 col-sm-12']//span//a"}
-  (Session info: chrome=121.0.6167.87)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [072c632bff61da735ca5ec32f575e8d5, findElement {using=xpath, value=//table[@class='table table-bordered table-hover table-sm']//tbody//tr[2]//td//div[5][@class='col-xs-12 col-sm-12']//span//a}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.87, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\DHIVIY~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52345}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52345/devtoo..., se:cdpVersion: 121.0.6167.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 072c632bff61da735ca5ec32f575e8d5
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
-at elementRepository.ManageExpense.clickFileInViewMore(ManageExpense.java:278)
-at testCase.ManageExpenseTest.tc03_SearchDataInExpenseTable(ManageExpenseTest.java:100)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="tc05_EditExpenseSavedData03()[pri:0, instance:testCase.ManageExpenseTest@1d296da]" started-at="2024-02-05T21:34:18 IST" name="tc05_EditExpenseSavedData03" finished-at="2024-02-05T21:34:24 IST" duration-ms="5983" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tc03_SearchDataInExpenseTable -->
-        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ManageExpenseTest@4562e04d]" started-at="2024-02-02T21:38:19 IST" name="afterMethode" finished-at="2024-02-02T21:38:19 IST" duration-ms="325" status="PASS">
+        </test-method> <!-- tc05_EditExpenseSavedData03 -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ManageExpenseTest@1d296da]" started-at="2024-02-05T21:34:24 IST" name="afterMethode" finished-at="2024-02-05T21:34:25 IST" duration-ms="244" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=tc03_SearchDataInExpenseTable status=SKIP method=ManageExpenseTest.tc03_SearchDataInExpenseTable()[pri:0, instance:testCase.ManageExpenseTest@4562e04d] output={null}]]]>
+                <![CDATA[[TestResult name=tc05_EditExpenseSavedData03 status=SUCCESS method=ManageExpenseTest.tc05_EditExpenseSavedData03()[pri:0, instance:testCase.ManageExpenseTest@1d296da] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethode -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ManageExpenseTest@4562e04d]" started-at="2024-02-02T21:38:19 IST" name="beforeMethod" finished-at="2024-02-02T21:38:22 IST" duration-ms="2681" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ManageExpenseTest@1d296da]" started-at="2024-02-05T21:34:25 IST" name="beforeMethod" finished-at="2024-02-05T21:34:28 IST" duration-ms="2916" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -349,476 +202,15 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="tc03_SearchDataInExpenseTable()[pri:0, instance:testCase.ManageExpenseTest@4562e04d]" started-at="2024-02-02T21:38:22 IST" name="tc03_SearchDataInExpenseTable" finished-at="2024-02-02T21:38:51 IST" duration-ms="29473" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//table[@class='table table-bordered table-hover table-sm']//tbody//tr[2]//td//div[5][@class='col-xs-12 col-sm-12']//span//a"}
-  (Session info: chrome=121.0.6167.87)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [937ecfa201796a7e6999a9b031ef3311, findElement {using=xpath, value=//table[@class='table table-bordered table-hover table-sm']//tbody//tr[2]//td//div[5][@class='col-xs-12 col-sm-12']//span//a}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.87, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\DHIVIY~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52401}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52401/devtoo..., se:cdpVersion: 121.0.6167.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 937ecfa201796a7e6999a9b031ef3311]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//table[@class='table table-bordered table-hover table-sm']//tbody//tr[2]//td//div[5][@class='col-xs-12 col-sm-12']//span//a"}
-  (Session info: chrome=121.0.6167.87)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [937ecfa201796a7e6999a9b031ef3311, findElement {using=xpath, value=//table[@class='table table-bordered table-hover table-sm']//tbody//tr[2]//td//div[5][@class='col-xs-12 col-sm-12']//span//a}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.87, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\DHIVIY~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52401}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52401/devtoo..., se:cdpVersion: 121.0.6167.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 937ecfa201796a7e6999a9b031ef3311
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
-at elementRepository.ManageExpense.clickFileInViewMore(ManageExpense.java:278)
-at testCase.ManageExpenseTest.tc03_SearchDataInExpenseTable(ManageExpenseTest.java:100)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="tc06_DeleteExpenseSavedDatainTable()[pri:0, instance:testCase.ManageExpenseTest@1d296da]" started-at="2024-02-05T21:34:28 IST" name="tc06_DeleteExpenseSavedDatainTable" finished-at="2024-02-05T21:34:30 IST" duration-ms="2165" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tc03_SearchDataInExpenseTable -->
-        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ManageExpenseTest@4562e04d]" started-at="2024-02-02T21:38:51 IST" name="afterMethode" finished-at="2024-02-02T21:38:52 IST" duration-ms="531" status="PASS">
+        </test-method> <!-- tc06_DeleteExpenseSavedDatainTable -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ManageExpenseTest@1d296da]" started-at="2024-02-05T21:34:30 IST" name="afterMethode" finished-at="2024-02-05T21:34:30 IST" duration-ms="211" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=tc03_SearchDataInExpenseTable status=FAILURE method=ManageExpenseTest.tc03_SearchDataInExpenseTable()[pri:0, instance:testCase.ManageExpenseTest@4562e04d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethode -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ManageExpenseTest@4562e04d]" started-at="2024-02-02T21:38:52 IST" name="beforeMethod" finished-at="2024-02-02T21:38:54 IST" duration-ms="2521" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method retried="true" signature="tc04_EditExpenseSavedData03()[pri:0, instance:testCase.ManageExpenseTest@4562e04d]" started-at="2024-02-02T21:38:54 IST" name="tc04_EditExpenseSavedData03" finished-at="2024-02-02T21:38:58 IST" duration-ms="4041" status="SKIP">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element is not clickable at point (342, 766)
-  (Session info: chrome=121.0.6167.87)
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [eb6913487745a724449dca9952dcbc79, clickElement {id=BA7AB94974AA0550141EF0C75707FC58_element_9981}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.87, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\DHIVIY~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52457}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52457/devtoo..., se:cdpVersion: 121.0.6167.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (eb6913487745a724449dca9952dcbc79)] -> xpath: //button[@class ='btn btn-danger']]
-Session ID: eb6913487745a724449dca9952dcbc79]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (342, 766)
-  (Session info: chrome=121.0.6167.87)
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [eb6913487745a724449dca9952dcbc79, clickElement {id=BA7AB94974AA0550141EF0C75707FC58_element_9981}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.87, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\DHIVIY~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52457}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52457/devtoo..., se:cdpVersion: 121.0.6167.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (eb6913487745a724449dca9952dcbc79)] -> xpath: //button[@class ='btn btn-danger']]
-Session ID: eb6913487745a724449dca9952dcbc79
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
-at elementRepository.ManageExpense.clickUpdateButton(ManageExpense.java:217)
-at testCase.ManageExpenseTest.tc04_EditExpenseSavedData03(ManageExpenseTest.java:137)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tc04_EditExpenseSavedData03 -->
-        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ManageExpenseTest@4562e04d]" started-at="2024-02-02T21:38:58 IST" name="afterMethode" finished-at="2024-02-02T21:38:59 IST" duration-ms="303" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=tc04_EditExpenseSavedData03 status=SKIP method=ManageExpenseTest.tc04_EditExpenseSavedData03()[pri:0, instance:testCase.ManageExpenseTest@4562e04d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethode -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ManageExpenseTest@4562e04d]" started-at="2024-02-02T21:38:59 IST" name="beforeMethod" finished-at="2024-02-02T21:39:01 IST" duration-ms="2507" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="tc04_EditExpenseSavedData03()[pri:0, instance:testCase.ManageExpenseTest@4562e04d]" started-at="2024-02-02T21:39:01 IST" name="tc04_EditExpenseSavedData03" finished-at="2024-02-02T21:39:07 IST" duration-ms="5428" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tc04_EditExpenseSavedData03 -->
-        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ManageExpenseTest@4562e04d]" started-at="2024-02-02T21:39:07 IST" name="afterMethode" finished-at="2024-02-02T21:39:07 IST" duration-ms="266" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=tc04_EditExpenseSavedData03 status=SUCCESS method=ManageExpenseTest.tc04_EditExpenseSavedData03()[pri:0, instance:testCase.ManageExpenseTest@4562e04d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethode -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ManageExpenseTest@4562e04d]" started-at="2024-02-02T21:39:07 IST" name="beforeMethod" finished-at="2024-02-02T21:39:10 IST" duration-ms="3000" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method retried="true" signature="tc05_DeleteExpenseSavedDatainTable()[pri:0, instance:testCase.ManageExpenseTest@4562e04d]" started-at="2024-02-02T21:39:10 IST" name="tc05_DeleteExpenseSavedDatainTable" finished-at="2024-02-02T21:39:12 IST" duration-ms="2538" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[::The delete Success message doesn't match expected [Alert!
-Expense Record Deleted Successfully] but found [×
-Alert!
-Expense Record Deleted Successfully]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: ::The delete Success message doesn't match expected [Alert!
-Expense Record Deleted Successfully] but found [×
-Alert!
-Expense Record Deleted Successfully]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at testCase.ManageExpenseTest.tc05_DeleteExpenseSavedDatainTable(ManageExpenseTest.java:165)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tc05_DeleteExpenseSavedDatainTable -->
-        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ManageExpenseTest@4562e04d]" started-at="2024-02-02T21:39:12 IST" name="afterMethode" finished-at="2024-02-02T21:39:13 IST" duration-ms="382" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=tc05_DeleteExpenseSavedDatainTable status=SKIP method=ManageExpenseTest.tc05_DeleteExpenseSavedDatainTable()[pri:0, instance:testCase.ManageExpenseTest@4562e04d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethode -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ManageExpenseTest@4562e04d]" started-at="2024-02-02T21:39:13 IST" name="beforeMethod" finished-at="2024-02-02T21:39:16 IST" duration-ms="2840" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method retried="true" signature="tc05_DeleteExpenseSavedDatainTable()[pri:0, instance:testCase.ManageExpenseTest@4562e04d]" started-at="2024-02-02T21:39:16 IST" name="tc05_DeleteExpenseSavedDatainTable" finished-at="2024-02-02T21:39:18 IST" duration-ms="2625" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[::The delete Success message doesn't match expected [Alert!
-Expense Record Deleted Successfully] but found [×
-Alert!
-Expense Record Deleted Successfully]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: ::The delete Success message doesn't match expected [Alert!
-Expense Record Deleted Successfully] but found [×
-Alert!
-Expense Record Deleted Successfully]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at testCase.ManageExpenseTest.tc05_DeleteExpenseSavedDatainTable(ManageExpenseTest.java:165)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tc05_DeleteExpenseSavedDatainTable -->
-        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ManageExpenseTest@4562e04d]" started-at="2024-02-02T21:39:18 IST" name="afterMethode" finished-at="2024-02-02T21:39:19 IST" duration-ms="306" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=tc05_DeleteExpenseSavedDatainTable status=SKIP method=ManageExpenseTest.tc05_DeleteExpenseSavedDatainTable()[pri:0, instance:testCase.ManageExpenseTest@4562e04d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethode -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ManageExpenseTest@4562e04d]" started-at="2024-02-02T21:39:19 IST" name="beforeMethod" finished-at="2024-02-02T21:39:21 IST" duration-ms="2700" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method retried="true" signature="tc05_DeleteExpenseSavedDatainTable()[pri:0, instance:testCase.ManageExpenseTest@4562e04d]" started-at="2024-02-02T21:39:21 IST" name="tc05_DeleteExpenseSavedDatainTable" finished-at="2024-02-02T21:39:24 IST" duration-ms="2625" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[::The delete Success message doesn't match expected [Alert!
-Expense Record Deleted Successfully] but found [×
-Alert!
-Expense Record Deleted Successfully]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: ::The delete Success message doesn't match expected [Alert!
-Expense Record Deleted Successfully] but found [×
-Alert!
-Expense Record Deleted Successfully]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at testCase.ManageExpenseTest.tc05_DeleteExpenseSavedDatainTable(ManageExpenseTest.java:165)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tc05_DeleteExpenseSavedDatainTable -->
-        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ManageExpenseTest@4562e04d]" started-at="2024-02-02T21:39:24 IST" name="afterMethode" finished-at="2024-02-02T21:39:24 IST" duration-ms="287" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=tc05_DeleteExpenseSavedDatainTable status=SKIP method=ManageExpenseTest.tc05_DeleteExpenseSavedDatainTable()[pri:0, instance:testCase.ManageExpenseTest@4562e04d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethode -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ManageExpenseTest@4562e04d]" started-at="2024-02-02T21:39:24 IST" name="beforeMethod" finished-at="2024-02-02T21:39:27 IST" duration-ms="2660" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="tc05_DeleteExpenseSavedDatainTable()[pri:0, instance:testCase.ManageExpenseTest@4562e04d]" started-at="2024-02-02T21:39:27 IST" name="tc05_DeleteExpenseSavedDatainTable" finished-at="2024-02-02T21:39:30 IST" duration-ms="2658" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[::The delete Success message doesn't match expected [Alert!
-Expense Record Deleted Successfully] but found [×
-Alert!
-Expense Record Deleted Successfully]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: ::The delete Success message doesn't match expected [Alert!
-Expense Record Deleted Successfully] but found [×
-Alert!
-Expense Record Deleted Successfully]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at testCase.ManageExpenseTest.tc05_DeleteExpenseSavedDatainTable(ManageExpenseTest.java:165)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tc05_DeleteExpenseSavedDatainTable -->
-        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ManageExpenseTest@4562e04d]" started-at="2024-02-02T21:39:30 IST" name="afterMethode" finished-at="2024-02-02T21:39:30 IST" duration-ms="503" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=tc05_DeleteExpenseSavedDatainTable status=FAILURE method=ManageExpenseTest.tc05_DeleteExpenseSavedDatainTable()[pri:0, instance:testCase.ManageExpenseTest@4562e04d] output={null}]]]>
+                <![CDATA[[TestResult name=tc06_DeleteExpenseSavedDatainTable status=SUCCESS method=ManageExpenseTest.tc06_DeleteExpenseSavedDatainTable()[pri:0, instance:testCase.ManageExpenseTest@1d296da] output={null}]]]>
               </value>
             </param>
           </params>
@@ -826,6 +218,690 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           </reporter-output>
         </test-method> <!-- afterMethode -->
       </class> <!-- testCase.ManageExpenseTest -->
+      <class name="testCase.ManageLocationTest">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ManageLocationTest@776aec5c]" started-at="2024-02-05T21:32:52 IST" name="beforeMethod" finished-at="2024-02-05T21:32:56 IST" duration-ms="3581" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="tc01_VerifyAddNewLocation()[pri:0, instance:testCase.ManageLocationTest@776aec5c]" started-at="2024-02-05T21:32:56 IST" name="tc01_VerifyAddNewLocation" finished-at="2024-02-05T21:33:01 IST" duration-ms="5008" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc01_VerifyAddNewLocation -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ManageLocationTest@776aec5c]" started-at="2024-02-05T21:33:01 IST" name="afterMethode" finished-at="2024-02-05T21:33:01 IST" duration-ms="256" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc01_VerifyAddNewLocation status=SUCCESS method=ManageLocationTest.tc01_VerifyAddNewLocation()[pri:0, instance:testCase.ManageLocationTest@776aec5c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ManageLocationTest@776aec5c]" started-at="2024-02-05T21:33:01 IST" name="beforeMethod" finished-at="2024-02-05T21:33:05 IST" duration-ms="3805" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="tc02_SearchLocationInListVerify()[pri:0, instance:testCase.ManageLocationTest@776aec5c]" started-at="2024-02-05T21:33:05 IST" name="tc02_SearchLocationInListVerify" finished-at="2024-02-05T21:33:09 IST" duration-ms="3636" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc02_SearchLocationInListVerify -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ManageLocationTest@776aec5c]" started-at="2024-02-05T21:33:09 IST" name="afterMethode" finished-at="2024-02-05T21:33:09 IST" duration-ms="245" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc02_SearchLocationInListVerify status=SUCCESS method=ManageLocationTest.tc02_SearchLocationInListVerify()[pri:0, instance:testCase.ManageLocationTest@776aec5c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ManageLocationTest@776aec5c]" started-at="2024-02-05T21:33:09 IST" name="beforeMethod" finished-at="2024-02-05T21:33:13 IST" duration-ms="4340" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="tc03_EditLoctionVerify()[pri:0, instance:testCase.ManageLocationTest@776aec5c]" started-at="2024-02-05T21:33:13 IST" name="tc03_EditLoctionVerify" finished-at="2024-02-05T21:33:17 IST" duration-ms="3837" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc03_EditLoctionVerify -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ManageLocationTest@776aec5c]" started-at="2024-02-05T21:33:17 IST" name="afterMethode" finished-at="2024-02-05T21:33:17 IST" duration-ms="275" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc03_EditLoctionVerify status=SUCCESS method=ManageLocationTest.tc03_EditLoctionVerify()[pri:0, instance:testCase.ManageLocationTest@776aec5c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ManageLocationTest@776aec5c]" started-at="2024-02-05T21:33:17 IST" name="beforeMethod" finished-at="2024-02-05T21:33:21 IST" duration-ms="3331" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="tc04_DleteLocationAndVerifyBySearch()[pri:0, instance:testCase.ManageLocationTest@776aec5c]" started-at="2024-02-05T21:33:21 IST" name="tc04_DleteLocationAndVerifyBySearch" finished-at="2024-02-05T21:33:25 IST" duration-ms="4756" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc04_DleteLocationAndVerifyBySearch -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ManageLocationTest@776aec5c]" started-at="2024-02-05T21:33:25 IST" name="afterMethode" finished-at="2024-02-05T21:33:26 IST" duration-ms="349" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc04_DleteLocationAndVerifyBySearch status=SUCCESS method=ManageLocationTest.tc04_DleteLocationAndVerifyBySearch()[pri:0, instance:testCase.ManageLocationTest@776aec5c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+      </class> <!-- testCase.ManageLocationTest -->
+      <class name="testCase.LoginPageTest">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.LoginPageTest@235834f2]" started-at="2024-02-05T21:32:20 IST" name="beforeMethod" finished-at="2024-02-05T21:32:24 IST" duration-ms="4386" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyLoginWithInValidCredentials(java.lang.String,java.lang.String)[pri:0, instance:testCase.LoginPageTest@235834f2]" started-at="2024-02-05T21:32:24 IST" name="verifyLoginWithInValidCredentials" data-provider="LoginPageTestCrentials" finished-at="2024-02-05T21:32:26 IST" duration-ms="1407" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin12]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithInValidCredentials -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.LoginPageTest@235834f2]" started-at="2024-02-05T21:32:26 IST" name="afterMethode" finished-at="2024-02-05T21:32:27 IST" duration-ms="497" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginWithInValidCredentials status=SUCCESS method=LoginPageTest.verifyLoginWithInValidCredentials(java.lang.String,java.lang.String)[pri:0, instance:testCase.LoginPageTest@235834f2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.LoginPageTest@235834f2]" started-at="2024-02-05T21:32:27 IST" name="beforeMethod" finished-at="2024-02-05T21:32:32 IST" duration-ms="5038" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyLoginWithInValidCredentials(java.lang.String,java.lang.String)[pri:0, instance:testCase.LoginPageTest@235834f2]" started-at="2024-02-05T21:32:32 IST" name="verifyLoginWithInValidCredentials" data-provider="LoginPageTestCrentials" finished-at="2024-02-05T21:32:33 IST" duration-ms="832" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abcd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithInValidCredentials -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.LoginPageTest@235834f2]" started-at="2024-02-05T21:32:33 IST" name="afterMethode" finished-at="2024-02-05T21:32:33 IST" duration-ms="335" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginWithInValidCredentials status=SUCCESS method=LoginPageTest.verifyLoginWithInValidCredentials(java.lang.String,java.lang.String)[pri:0, instance:testCase.LoginPageTest@235834f2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.LoginPageTest@235834f2]" started-at="2024-02-05T21:32:33 IST" name="beforeMethod" finished-at="2024-02-05T21:32:36 IST" duration-ms="3012" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyLoginWithInValidCredentials(java.lang.String,java.lang.String)[pri:0, instance:testCase.LoginPageTest@235834f2]" started-at="2024-02-05T21:32:36 IST" name="verifyLoginWithInValidCredentials" data-provider="LoginPageTestCrentials" finished-at="2024-02-05T21:32:37 IST" duration-ms="936" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1234]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithInValidCredentials -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.LoginPageTest@235834f2]" started-at="2024-02-05T21:32:37 IST" name="afterMethode" finished-at="2024-02-05T21:32:37 IST" duration-ms="249" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginWithInValidCredentials status=SUCCESS method=LoginPageTest.verifyLoginWithInValidCredentials(java.lang.String,java.lang.String)[pri:0, instance:testCase.LoginPageTest@235834f2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.LoginPageTest@235834f2]" started-at="2024-02-05T21:32:37 IST" name="beforeMethod" finished-at="2024-02-05T21:32:41 IST" duration-ms="3954" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyLoginWithValidCredentials()[pri:0, instance:testCase.LoginPageTest@235834f2]" started-at="2024-02-05T21:32:41 IST" name="verifyLoginWithValidCredentials" finished-at="2024-02-05T21:32:43 IST" duration-ms="1610" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithValidCredentials -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.LoginPageTest@235834f2]" started-at="2024-02-05T21:32:43 IST" name="afterMethode" finished-at="2024-02-05T21:32:43 IST" duration-ms="441" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginWithValidCredentials status=SUCCESS method=LoginPageTest.verifyLoginWithValidCredentials()[pri:0, instance:testCase.LoginPageTest@235834f2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+      </class> <!-- testCase.LoginPageTest -->
     </test> <!-- ChromeTest -->
+    <test started-at="2024-02-05T21:32:20 IST" name="FireFoxTest" finished-at="2024-02-05T21:35:00 IST" duration-ms="160676">
+      <class name="testCase.HomePageTest">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.HomePageTest@79079097]" started-at="2024-02-05T21:32:58 IST" name="beforeMethod" finished-at="2024-02-05T21:33:03 IST" duration-ms="5345" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FireFox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="homePage()[pri:0, instance:testCase.HomePageTest@79079097]" started-at="2024-02-05T21:33:03 IST" name="homePage" finished-at="2024-02-05T21:33:06 IST" duration-ms="2765" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePage -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.HomePageTest@79079097]" started-at="2024-02-05T21:33:06 IST" name="afterMethode" finished-at="2024-02-05T21:33:07 IST" duration-ms="918" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=homePage status=SUCCESS method=HomePageTest.homePage()[pri:0, instance:testCase.HomePageTest@79079097] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+      </class> <!-- testCase.HomePageTest -->
+      <class name="testCase.ManageExpenseTest">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ManageExpenseTest@4b2bac3f]" started-at="2024-02-05T21:33:50 IST" name="beforeMethod" finished-at="2024-02-05T21:33:55 IST" duration-ms="5526" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FireFox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="tc01_VerifyExpenseCategoryNewTitleCreation()[pri:0, instance:testCase.ManageExpenseTest@4b2bac3f]" started-at="2024-02-05T21:33:55 IST" name="tc01_VerifyExpenseCategoryNewTitleCreation" finished-at="2024-02-05T21:33:58 IST" duration-ms="3019" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc01_VerifyExpenseCategoryNewTitleCreation -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ManageExpenseTest@4b2bac3f]" started-at="2024-02-05T21:33:58 IST" name="afterMethode" finished-at="2024-02-05T21:33:59 IST" duration-ms="1115" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc01_VerifyExpenseCategoryNewTitleCreation status=SUCCESS method=ManageExpenseTest.tc01_VerifyExpenseCategoryNewTitleCreation()[pri:0, instance:testCase.ManageExpenseTest@4b2bac3f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ManageExpenseTest@4b2bac3f]" started-at="2024-02-05T21:33:59 IST" name="beforeMethod" finished-at="2024-02-05T21:34:04 IST" duration-ms="4978" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FireFox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="tc02_SearchAndDeleteExpenseCategoryTitle()[pri:0, instance:testCase.ManageExpenseTest@4b2bac3f]" started-at="2024-02-05T21:34:04 IST" name="tc02_SearchAndDeleteExpenseCategoryTitle" finished-at="2024-02-05T21:34:09 IST" duration-ms="4453" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc02_SearchAndDeleteExpenseCategoryTitle -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ManageExpenseTest@4b2bac3f]" started-at="2024-02-05T21:34:09 IST" name="afterMethode" finished-at="2024-02-05T21:34:10 IST" duration-ms="925" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc02_SearchAndDeleteExpenseCategoryTitle status=SUCCESS method=ManageExpenseTest.tc02_SearchAndDeleteExpenseCategoryTitle()[pri:0, instance:testCase.ManageExpenseTest@4b2bac3f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ManageExpenseTest@4b2bac3f]" started-at="2024-02-05T21:34:10 IST" name="beforeMethod" finished-at="2024-02-05T21:34:15 IST" duration-ms="5526" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FireFox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="tc03_AddNewExpenseVerification02()[pri:0, instance:testCase.ManageExpenseTest@4b2bac3f]" started-at="2024-02-05T21:34:15 IST" name="tc03_AddNewExpenseVerification02" finished-at="2024-02-05T21:34:28 IST" duration-ms="12604" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc03_AddNewExpenseVerification02 -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ManageExpenseTest@4b2bac3f]" started-at="2024-02-05T21:34:28 IST" name="afterMethode" finished-at="2024-02-05T21:34:29 IST" duration-ms="1070" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc03_AddNewExpenseVerification02 status=SUCCESS method=ManageExpenseTest.tc03_AddNewExpenseVerification02()[pri:0, instance:testCase.ManageExpenseTest@4b2bac3f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ManageExpenseTest@4b2bac3f]" started-at="2024-02-05T21:34:29 IST" name="beforeMethod" finished-at="2024-02-05T21:34:34 IST" duration-ms="4905" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FireFox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="tc04_SearchDataInExpenseTable()[pri:0, instance:testCase.ManageExpenseTest@4b2bac3f]" started-at="2024-02-05T21:34:34 IST" name="tc04_SearchDataInExpenseTable" finished-at="2024-02-05T21:34:42 IST" duration-ms="8204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc04_SearchDataInExpenseTable -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ManageExpenseTest@4b2bac3f]" started-at="2024-02-05T21:34:42 IST" name="afterMethode" finished-at="2024-02-05T21:34:43 IST" duration-ms="840" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc04_SearchDataInExpenseTable status=SUCCESS method=ManageExpenseTest.tc04_SearchDataInExpenseTable()[pri:0, instance:testCase.ManageExpenseTest@4b2bac3f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ManageExpenseTest@4b2bac3f]" started-at="2024-02-05T21:34:43 IST" name="beforeMethod" finished-at="2024-02-05T21:34:47 IST" duration-ms="4148" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FireFox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="tc05_EditExpenseSavedData03()[pri:0, instance:testCase.ManageExpenseTest@4b2bac3f]" started-at="2024-02-05T21:34:47 IST" name="tc05_EditExpenseSavedData03" finished-at="2024-02-05T21:34:51 IST" duration-ms="4147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc05_EditExpenseSavedData03 -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ManageExpenseTest@4b2bac3f]" started-at="2024-02-05T21:34:51 IST" name="afterMethode" finished-at="2024-02-05T21:34:52 IST" duration-ms="804" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc05_EditExpenseSavedData03 status=SUCCESS method=ManageExpenseTest.tc05_EditExpenseSavedData03()[pri:0, instance:testCase.ManageExpenseTest@4b2bac3f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ManageExpenseTest@4b2bac3f]" started-at="2024-02-05T21:34:52 IST" name="beforeMethod" finished-at="2024-02-05T21:34:57 IST" duration-ms="4747" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FireFox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="tc06_DeleteExpenseSavedDatainTable()[pri:0, instance:testCase.ManageExpenseTest@4b2bac3f]" started-at="2024-02-05T21:34:57 IST" name="tc06_DeleteExpenseSavedDatainTable" finished-at="2024-02-05T21:35:00 IST" duration-ms="2781" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc06_DeleteExpenseSavedDatainTable -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ManageExpenseTest@4b2bac3f]" started-at="2024-02-05T21:35:00 IST" name="afterMethode" finished-at="2024-02-05T21:35:00 IST" duration-ms="780" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc06_DeleteExpenseSavedDatainTable status=SUCCESS method=ManageExpenseTest.tc06_DeleteExpenseSavedDatainTable()[pri:0, instance:testCase.ManageExpenseTest@4b2bac3f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+      </class> <!-- testCase.ManageExpenseTest -->
+      <class name="testCase.ManageLocationTest">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ManageLocationTest@4d1c00d0]" started-at="2024-02-05T21:33:07 IST" name="beforeMethod" finished-at="2024-02-05T21:33:13 IST" duration-ms="5947" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FireFox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="tc01_VerifyAddNewLocation()[pri:0, instance:testCase.ManageLocationTest@4d1c00d0]" started-at="2024-02-05T21:33:13 IST" name="tc01_VerifyAddNewLocation" finished-at="2024-02-05T21:33:18 IST" duration-ms="5150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc01_VerifyAddNewLocation -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ManageLocationTest@4d1c00d0]" started-at="2024-02-05T21:33:18 IST" name="afterMethode" finished-at="2024-02-05T21:33:19 IST" duration-ms="1196" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc01_VerifyAddNewLocation status=SUCCESS method=ManageLocationTest.tc01_VerifyAddNewLocation()[pri:0, instance:testCase.ManageLocationTest@4d1c00d0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ManageLocationTest@4d1c00d0]" started-at="2024-02-05T21:33:19 IST" name="beforeMethod" finished-at="2024-02-05T21:33:24 IST" duration-ms="5381" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FireFox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="tc02_SearchLocationInListVerify()[pri:0, instance:testCase.ManageLocationTest@4d1c00d0]" started-at="2024-02-05T21:33:24 IST" name="tc02_SearchLocationInListVerify" finished-at="2024-02-05T21:33:27 IST" duration-ms="2515" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc02_SearchLocationInListVerify -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ManageLocationTest@4d1c00d0]" started-at="2024-02-05T21:33:27 IST" name="afterMethode" finished-at="2024-02-05T21:33:29 IST" duration-ms="1601" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc02_SearchLocationInListVerify status=SUCCESS method=ManageLocationTest.tc02_SearchLocationInListVerify()[pri:0, instance:testCase.ManageLocationTest@4d1c00d0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ManageLocationTest@4d1c00d0]" started-at="2024-02-05T21:33:29 IST" name="beforeMethod" finished-at="2024-02-05T21:33:35 IST" duration-ms="6239" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FireFox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="tc03_EditLoctionVerify()[pri:0, instance:testCase.ManageLocationTest@4d1c00d0]" started-at="2024-02-05T21:33:35 IST" name="tc03_EditLoctionVerify" finished-at="2024-02-05T21:33:38 IST" duration-ms="3009" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc03_EditLoctionVerify -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ManageLocationTest@4d1c00d0]" started-at="2024-02-05T21:33:38 IST" name="afterMethode" finished-at="2024-02-05T21:33:39 IST" duration-ms="1120" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc03_EditLoctionVerify status=SUCCESS method=ManageLocationTest.tc03_EditLoctionVerify()[pri:0, instance:testCase.ManageLocationTest@4d1c00d0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ManageLocationTest@4d1c00d0]" started-at="2024-02-05T21:33:39 IST" name="beforeMethod" finished-at="2024-02-05T21:33:46 IST" duration-ms="6729" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FireFox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="tc04_DleteLocationAndVerifyBySearch()[pri:0, instance:testCase.ManageLocationTest@4d1c00d0]" started-at="2024-02-05T21:33:46 IST" name="tc04_DleteLocationAndVerifyBySearch" finished-at="2024-02-05T21:33:49 IST" duration-ms="3206" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc04_DleteLocationAndVerifyBySearch -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ManageLocationTest@4d1c00d0]" started-at="2024-02-05T21:33:49 IST" name="afterMethode" finished-at="2024-02-05T21:33:50 IST" duration-ms="879" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc04_DleteLocationAndVerifyBySearch status=SUCCESS method=ManageLocationTest.tc04_DleteLocationAndVerifyBySearch()[pri:0, instance:testCase.ManageLocationTest@4d1c00d0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+      </class> <!-- testCase.ManageLocationTest -->
+      <class name="testCase.LoginPageTest">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.LoginPageTest@3bf7ca37]" started-at="2024-02-05T21:32:20 IST" name="beforeMethod" finished-at="2024-02-05T21:32:31 IST" duration-ms="10826" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FireFox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyLoginWithInValidCredentials(java.lang.String,java.lang.String)[pri:0, instance:testCase.LoginPageTest@3bf7ca37]" started-at="2024-02-05T21:32:31 IST" name="verifyLoginWithInValidCredentials" data-provider="LoginPageTestCrentials" finished-at="2024-02-05T21:32:32 IST" duration-ms="999" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin12]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithInValidCredentials -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.LoginPageTest@3bf7ca37]" started-at="2024-02-05T21:32:32 IST" name="afterMethode" finished-at="2024-02-05T21:32:33 IST" duration-ms="1352" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginWithInValidCredentials status=SUCCESS method=LoginPageTest.verifyLoginWithInValidCredentials(java.lang.String,java.lang.String)[pri:0, instance:testCase.LoginPageTest@3bf7ca37] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.LoginPageTest@3bf7ca37]" started-at="2024-02-05T21:32:33 IST" name="beforeMethod" finished-at="2024-02-05T21:32:40 IST" duration-ms="6934" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FireFox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyLoginWithInValidCredentials(java.lang.String,java.lang.String)[pri:0, instance:testCase.LoginPageTest@3bf7ca37]" started-at="2024-02-05T21:32:40 IST" name="verifyLoginWithInValidCredentials" data-provider="LoginPageTestCrentials" finished-at="2024-02-05T21:32:41 IST" duration-ms="452" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abcd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithInValidCredentials -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.LoginPageTest@3bf7ca37]" started-at="2024-02-05T21:32:41 IST" name="afterMethode" finished-at="2024-02-05T21:32:42 IST" duration-ms="1062" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginWithInValidCredentials status=SUCCESS method=LoginPageTest.verifyLoginWithInValidCredentials(java.lang.String,java.lang.String)[pri:0, instance:testCase.LoginPageTest@3bf7ca37] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.LoginPageTest@3bf7ca37]" started-at="2024-02-05T21:32:42 IST" name="beforeMethod" finished-at="2024-02-05T21:32:48 IST" duration-ms="6400" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FireFox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyLoginWithInValidCredentials(java.lang.String,java.lang.String)[pri:0, instance:testCase.LoginPageTest@3bf7ca37]" started-at="2024-02-05T21:32:48 IST" name="verifyLoginWithInValidCredentials" data-provider="LoginPageTestCrentials" finished-at="2024-02-05T21:32:49 IST" duration-ms="612" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1234]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithInValidCredentials -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.LoginPageTest@3bf7ca37]" started-at="2024-02-05T21:32:49 IST" name="afterMethode" finished-at="2024-02-05T21:32:50 IST" duration-ms="882" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginWithInValidCredentials status=SUCCESS method=LoginPageTest.verifyLoginWithInValidCredentials(java.lang.String,java.lang.String)[pri:0, instance:testCase.LoginPageTest@3bf7ca37] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.LoginPageTest@3bf7ca37]" started-at="2024-02-05T21:32:50 IST" name="beforeMethod" finished-at="2024-02-05T21:32:55 IST" duration-ms="5790" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FireFox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyLoginWithValidCredentials()[pri:0, instance:testCase.LoginPageTest@3bf7ca37]" started-at="2024-02-05T21:32:55 IST" name="verifyLoginWithValidCredentials" finished-at="2024-02-05T21:32:57 IST" duration-ms="1297" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithValidCredentials -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.LoginPageTest@3bf7ca37]" started-at="2024-02-05T21:32:57 IST" name="afterMethode" finished-at="2024-02-05T21:32:58 IST" duration-ms="1042" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginWithValidCredentials status=SUCCESS method=LoginPageTest.verifyLoginWithValidCredentials()[pri:0, instance:testCase.LoginPageTest@3bf7ca37] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+      </class> <!-- testCase.LoginPageTest -->
+    </test> <!-- FireFoxTest -->
   </suite> <!-- GroceryApplication -->
 </testng-results>

@@ -22,7 +22,7 @@ public class LoginPageTest extends BaseClass {
 	return new Object[][] { {"admin12", "admin"},{"Admin","abcd"},{"1234", "1234"} };
 	}
 	
-  @Test(groups ="Run")
+  @Test(groups ="smokeTest")
   public void verifyLoginWithValidCredentials() throws IOException {
 	  lp = new LoginPage(driver);// calls constructors in java class(Login page)
 	  hp = new HomePage(driver);
@@ -31,9 +31,8 @@ public class LoginPageTest extends BaseClass {
 	  lp.sendUserName(username);
 	  lp.sendPassword(password);
 	  lp.clickSignInButton();
-	  lp.getPageheading();
+	  String actual =lp.getPageheading();
 	  String expected = "Dashboard";
-	  String actual = hp.getHomePageHeading();
 	  System.out.println(actual);
 	  Assert.assertEquals(actual, expected, Constants.lp_verifyLoginWithValidCredentialsErrorMessage);
 	  

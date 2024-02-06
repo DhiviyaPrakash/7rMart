@@ -34,25 +34,26 @@ public class BaseClass {
 	}
 
 	@BeforeMethod(alwaysRun = true)
-	 //@Parameters("Browser")
-	@Parameters("Group")
+	@Parameters("Browser")
+
 	public void beforeMethod(String browserName) throws IOException {
 		if (browserName.equals("Chrome")) {
-			testBasic();//for loading properties file
-			System.setProperty(pro.getProperty("ChromeDriver"),System.getProperty("user.dir") + "\\src\\main\\resources\\Driver\\chrome\\chromedriver.exe");
-			//System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir") + "\\src\\main\\resources\\Driver\\chrome\\chromedriver.exe");
-			// WebDriverManager.chromedriver().setup();//this will use the current chrome
-			// version without giving path
+			testBasic();// for loading properties file
+			System.setProperty(pro.getProperty("ChromeDriver"),
+					System.getProperty("user.dir") + "\\src\\main\\resources\\Driver\\chrome\\chromedriver.exe");
+			// System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir") +
+			// "\\src\\main\\resources\\Driver\\chrome\\chromedriver.exe");
+			// WebDriverManager.chromedriver().setup();//this will use the current chrome version without giving path
 			driver = new ChromeDriver();
 		} else if (browserName.equals("FireFox")) {
 			testBasic();
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 		}
-		 //driver.get("https://groceryapp.uniqassosiates.com/admin/login");
-		 driver.get(pro.getProperty("BaseURL"));
+		// driver.get("https://groceryapp.uniqassosiates.com/admin/login");
+		driver.get(pro.getProperty("BaseURL"));
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(5000));// implicit wait
+		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(10000));// implicit wait
 	}
 
 	@AfterMethod(alwaysRun = true)

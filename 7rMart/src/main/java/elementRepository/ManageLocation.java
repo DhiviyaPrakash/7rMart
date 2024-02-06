@@ -6,10 +6,12 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import utilities.GeneralUtilites;
+import utilities.WaitUtilities;
 
 public class ManageLocation {
 	WebDriver driver;
 	GeneralUtilites gu = new GeneralUtilites();
+	WaitUtilities wu = new WaitUtilities();
 	String location;
 
 	public ManageLocation(WebDriver driver) // constructor
@@ -34,7 +36,22 @@ public class ManageLocation {
 	WebElement saveButton;
 	@FindBy(xpath = "//div[@class ='alert alert-success alert-dismissible']") 
 	WebElement alertSucessMessage;
-	
+	@FindBy(xpath = "//div[@class='col-sm-12']//a[2]") 
+	WebElement manageLocationSearchButton;
+	@FindBy(xpath = "//select[@id='country_id']") 
+	WebElement searchLocationCountryField;
+	@FindBy(xpath = "//input[@id='location']") 
+	WebElement searchLocationLocationField;
+	@FindBy(xpath = "//button[@value='sr']") 
+	WebElement searchLocationSearchButton;
+	@FindBy(xpath = "//input[@id='delivery']") 
+	WebElement editDeliveryChargeField;
+	@FindBy(xpath = "//button[@class='btn btn-danger']") 
+	WebElement updateButton;
+	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']") 
+	WebElement updateSuccessMessage;
+	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']") 
+	WebElement deleteSuccessMessage;
 	public void clickManageLocation() {
 		manageLocation.click();
 	}
@@ -78,6 +95,78 @@ public class ManageLocation {
 	        WebElement element=driver.findElement(By.xpath(tableElementPath));
 	        return element.getText();
 	        }
+	public void clickManageLocationSearchButton()
+	{
+		manageLocationSearchButton.click();
+	}
+	public void selectSearchLocationCountryDropdown()
+	{
+		gu.selectByValueFromDropdown(searchLocationCountryField, "230");
+	}
+	public void sendValueToSearchLocationLocationField(String text)
+	{
+		this.location = text;
+		gu.sendKeyFunction(searchLocationLocationField, text);
+		
+	}
+	public void clickSearchLocationSearchButton()
+	{
+		searchLocationSearchButton.click();
+	}
+	public void clickEditButtoninManageLocationTable(int row)
+	{
+			String tableElementPath="//table[@class='table table-bordered table-hover table-sm']//tbody//tr["+row+"]//td[6]//a//i[@class='fas fa-edit']";
+	        WebElement element=driver.findElement(By.xpath(tableElementPath));
+	        element.click();
+	        }
+	public void sendValuetoEditDeliveryChargeField()
+	{
+		editDeliveryChargeField.clear();
+		gu.sendKeyFunction(editDeliveryChargeField, "500");
+	}
+	public void clickUpdateButton()
+	{
+		updateButton.click();
+	}
+	public String getValueOfDeliveryCharge(int row)
+	{
+			String tableElementPath="//table[@class='table table-bordered table-hover table-sm']//tbody//tr["+row+"]//td[4]";
+	        WebElement element=driver.findElement(By.xpath(tableElementPath));
+	        return element.getText();
+	        }
+	public String getUpdateSuccessMessage()
+	{
+		System.out.println(updateSuccessMessage.getText());
+		return updateSuccessMessage.getText();
+	}
+	public void clickDeleteButtoninManageLocationTable(int row)
+	{
+			String tableElementPath="//table[@class='table table-bordered table-hover table-sm']//tbody//tr["+row+"]//td[6]//a//i[@class='fas fa-trash-alt']";
+	        WebElement element=driver.findElement(By.xpath(tableElementPath));
+	        element.click();
+	        }
+	public void alertWait()
+	{
+		wu.explicitWaitForAlert(driver);
+	}
+	public void deleteAlertAccept()
+	{
+		gu.acceptAlert(driver);
+	}
+	public String getDeleteLocationSuccessMessage()
+	{
+		System.out.println(deleteSuccessMessage.getText());
+		return deleteSuccessMessage.getText();
+	}
+	public String getDeletedSearchresult()
+	{
+		String tableElementPath="//table[@class='table table-bordered table-hover table-sm']//tbody//tr//td//span";
+        WebElement element=driver.findElement(By.xpath(tableElementPath));
+        return element.getText();
+	}
+	
+	
+	
 
 
 }

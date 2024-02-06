@@ -10,6 +10,7 @@ import utilities.GeneralUtilites;
 public class HomePage {
 	WebDriver driver;
 	GeneralUtilites gu = new GeneralUtilites();
+	
 
 	public HomePage(WebDriver driver) // constructor
 	{
@@ -17,12 +18,18 @@ public class HomePage {
 		PageFactory.initElements(driver, this);// with page factory
 
 	}
-	@FindBy(xpath = "//li[text() = 'Dashboard']")
-	WebElement heading;
+	@FindBy(xpath = "//div[@class='col-sm-6']//h1")
+	WebElement manageProductPageHeading;
+	@FindBy(xpath = "//section//div//div//div[5]//a[@class ='small-box-footer']")
+	WebElement manageProductMoreInfo;
 	
-	public String getHomePageHeading() {
-		//return heading.getText();
-		return gu.getElementText(heading);
+	
+	public void clickManageProductMoreInfo()
+	{
+		manageProductMoreInfo.click();
+	}
+	public String getmanageProductPageHeading() {
+		return gu.getElementText(manageProductPageHeading);
 		
 	}
 

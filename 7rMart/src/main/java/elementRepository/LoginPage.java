@@ -31,7 +31,7 @@ public class LoginPage {
 	@FindBy(xpath = "//div[@class ='alert alert-danger alert-dismissible']//h5")
 	WebElement alertText;
 
-	@FindBy(linkText = "7rmart supermarket")
+	@FindBy(xpath = "//li[@class='breadcrumb-item active']")
 	WebElement pageHeading;
 
 	// By userName = By.xpath("//input[@name ='username']");//without pageFactory
@@ -55,8 +55,9 @@ public class LoginPage {
 	 
 	}
 
-	public void getPageheading() {
-		System.out.println("Page Heading is:" + pageHeading.getText());
+	public String getPageheading() {
+		//System.out.println("Page Heading is:" + pageHeading.getText());
+		return gu.getElementText(pageHeading);
 
 	}
 

@@ -11,12 +11,12 @@
 		<parameter name="Browser" value="Chrome"></parameter>
 		<groups>
 			<run>
-				<include name="smokeTest"></include>
+				<include name="selenium"></include>
 				<!-- <exclude name ="Regression"></exclude>-->
 			</run>
 		</groups>
 		<classes>
-			<class name="testCase.LoginPageTest"></class>
+			<class name="testCase.ManageExpenseTest"></class>
 
 
 		</classes>
